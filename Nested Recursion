@@ -1,0 +1,18 @@
+package NestedRecursion;
+import java.util.Scanner;
+public class NestedRecursion {
+	static int nested(int n) {
+		if(n>100) {
+			return n-10;
+		}
+		return nested(nested(n+11));
+	}
+
+	public static void main(String[] args) {
+		Scanner sc  =new Scanner(System.in);
+		int n = 98;
+		System.out.println(nested (n));
+
+	}
+
+}
