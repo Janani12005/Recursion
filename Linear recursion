@@ -1,0 +1,19 @@
+package sum;                                 //Linear recursion
+import java.util.Scanner;
+public class sum {
+	public static int display(int n) {
+		if(n==0) {
+			return 0;
+		}
+		return n+display(n-1);
+		
+	}
+
+	public static void main(String[] args) {
+	    Scanner sc  =new Scanner (System.in);
+	    int n=5;
+	    System.out.println(display(n));
+
+	}
+
+}
