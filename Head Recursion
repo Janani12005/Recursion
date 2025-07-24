@@ -1,0 +1,23 @@
+package Demo;                             //Tail recursion
+import java.util.Scanner;
+
+public class Demo {
+	public static void display(int n) {
+		
+	if(n==0) {
+		return;
+	}
+	display(n-1);                   
+	System.out.print(n+" ");
+	//display(n-1);                //output->5 4 3 2 1
+	
+}
+
+	public static void main(String[] args) {
+		Scanner sc  =new Scanner (System.in);
+		int n=5;
+		display(n);
+
+	}
+
+}
